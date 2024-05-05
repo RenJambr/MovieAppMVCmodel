@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="logo.png" />
+        </div>
+        <h2 class="genre"></h2>
+        <div>
+          <form id="form">
+            <input
+              type="text"
+              id="search"
+              class="search"
+              placeholder="Search"
+            />
+          </form>
+          <button class="open-nav nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="nav nav-yellow">
+      <div class="nav nav-darkBlue">
+        <div class="nav nav-lighterBlue">
+          <img src="logo.png" />
+
+          <button class="close-nav nav-btn">
+            <i class="fas fa-xmark"></i>
+          </button>
+
+          <ul class="menu"></ul>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="movies"></div>
+
+      <div class="pagination"></div>
+    </section>
+
+    <script type="module" src="js/controller.js"></script>
+  </body>
+</html>
